@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paweva | Premium Pet Dropshipping Store</title>
+    <meta
+      name="description"
+      content="Paweva is a modern pet store for stylish, practical, and vet-loved dropshipping pet products."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <p>Free shipping on orders over $45 • 30-day satisfaction guarantee</p>
+    </header>
+
+    <nav class="navbar">
+      <a class="brand" href="#">Paweva</a>
+      <ul class="nav-links">
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button class="cart-pill" type="button" aria-label="Shopping cart">
+        Cart <span id="cart-count">0</span>
+      </button>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="hero-tag">Modern essentials for happy pets</p>
+          <h1>Built for comfort. Designed for modern pet families.</h1>
+          <p>
+            Discover hand-picked dropshipping products that blend smart function,
+            comfort, and style for dogs, cats, and every furry best friend.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Shop Best Sellers</a>
+            <a class="btn btn-secondary" href="#collections">Explore Collections</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>15k+</strong><span>Happy customers</span></li>
+            <li><strong>4.9/5</strong><span>Average rating</span></li>
+            <li><strong>48h</strong><span>Fast dispatch</span></li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h2>This Week's Featured Deal</h2>
+          <p>Orthopedic PawBed™ in neutral cloud gray.</p>
+          <p class="hero-price">$39.00 <span>$69.00</span></p>
+          <button class="btn btn-primary add-to-cart" data-product="Orthopedic PawBed™">
+            Add to Cart
+          </button>
+        </div>
+      </section>
+
+      <section id="collections" class="collections">
+        <div class="section-heading">
+          <p>Shop by collection</p>
+          <h2>Everything your pet needs, in one place.</h2>
+        </div>
+        <div class="collection-grid">
+          <article>
+            <h3>Sleep & Comfort</h3>
+            <p>Orthopedic beds, calming blankets, and soft lounging favorites.</p>
+          </article>
+          <article>
+            <h3>Travel & Outdoors</h3>
+            <p>Portable bottles, travel carriers, and durable adventure accessories.</p>
+          </article>
+          <article>
+            <h3>Play & Enrichment</h3>
+            <p>Interactive toys and stimulation tools for healthy activity.</p>
+          </article>
+          <article>
+            <h3>Daily Care</h3>
+            <p>Grooming, feeding, and wellness products for everyday routines.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="products" class="products">
+        <div class="section-heading">
+          <p>Best sellers</p>
+          <h2>Top-rated pet products from Paweva</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Product categories">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="sleep">Sleep</button>
+          <button class="chip" data-filter="travel">Travel</button>
+          <button class="chip" data-filter="play">Play</button>
+          <button class="chip" data-filter="care">Care</button>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-category="sleep">
+            <p class="badge">Best Seller</p>
+            <h3>Orthopedic PawBed™</h3>
+            <p>Memory foam support for deeper, healthier sleep.</p>
+            <div class="product-meta"><span>$39.00</span><span>★★★★★</span></div>
+            <button class="btn btn-primary add-to-cart" data-product="Orthopedic PawBed™">Add to Cart</button>
+          </article>
+          <article class="product-card" data-category="travel">
+            <p class="badge">New</p>
+            <h3>TrailSip Bottle™</h3>
+            <p>One-handed portable water bottle for walks and road trips.</p>
+            <div class="product-meta"><span>$24.00</span><span>★★★★☆</span></div>
+            <button class="btn btn-primary add-to-cart" data-product="TrailSip Bottle™">Add to Cart</button>
+          </article>
+          <article class="product-card" data-category="play">
+            <p class="badge">Popular</p>
+            <h3>PounceIQ Toy™</h3>
+            <p>Interactive toy that keeps pets active and mentally engaged.</p>
+            <div class="product-meta"><span>$19.00</span><span>★★★★★</span></div>
+            <button class="btn btn-primary add-to-cart" data-product="PounceIQ Toy™">Add to Cart</button>
+          </article>
+          <article class="product-card" data-category="care">
+            <p class="badge">Eco</p>
+            <h3>PurePaw Groom Kit™</h3>
+            <p>Gentle grooming tools for a smooth, stress-free routine.</p>
+            <div class="product-meta"><span>$29.00</span><span>★★★★☆</span></div>
+            <button class="btn btn-primary add-to-cart" data-product="PurePaw Groom Kit™">Add to Cart</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="section-heading">
+          <p>Testimonials</p>
+          <h2>Why pet parents love Paweva</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote>
+            “Fast shipping, premium quality, and everything looks beautiful in our home.”
+            <cite>— Mia R.</cite>
+          </blockquote>
+          <blockquote>
+            “The PawBed changed our senior dog's sleep completely. 10/10.”
+            <cite>— Daniel K.</cite>
+          </blockquote>
+          <blockquote>
+            “Clean design, easy checkout, and amazing customer support.”
+            <cite>— Priya S.</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Paweva</h2>
+        <p>
+          Paweva is a modern dropshipping brand focused on practical pet products
+          with premium aesthetics. We partner with trusted suppliers to bring you
+          reliable quality, fair pricing, and products your pets will actually use.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Paweva. Crafted for pets & their people.</p>
+    </footer>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
